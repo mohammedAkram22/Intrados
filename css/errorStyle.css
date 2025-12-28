@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #ff9e00;
+    --heading-color: #060500;
+    --font-color: #58595b;
+}
+
+body.dark {
+    background-color: #131212;
+}
+
+/*------------------ ERROR STYLE ------------------ */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error .container {
+    max-width: 600px;
+}
+
+.error h1 {
+    font-size: 130px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+body.dark .error h1 {
+    color: #eee;
+}
+
+.error h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.error p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+body.dark .error p {
+    color: #c2c2c2;
+}
+
+.error form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.error form input {
+    color: var(--font-color);
+    padding: 12px 120px 12px 25px;
+    font-size: 18px;
+    background-color: #fff;
+    font-weight: 400;
+    display: block;
+    border-radius: 4px;
+    height: 55px;
+    line-height: 28px;
+}
+
+body.dark .error form input {
+    background-color: #131212;
+}
+
+body.dark .error form input::placeholder {
+    color: #4C5156;
+}
+
+.error form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.error form button {
+    padding: 18px 38px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    line-height: 16px;
+    transition: .3s ease;
+    border: none;
+}
+
+.error form button:hover {
+    background-color: #ff8500;
+    border-color: #ff8500;
+}
+
+.error .back-btn {
+    color: var(--heading-color);
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+
+body.dark .error .back-btn {
+    color: #eee;
+}
+
+.error .back-btn:hover,
+body.dark .error .back-btn:hover {
+    color: var(--primary-color);
+}
+
+.error .back-btn i {
+    font-size: 14px;
+}

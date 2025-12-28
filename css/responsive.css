@@ -1,0 +1,59 @@
+/* Mobile - أقل من 480 */
+@media (max-width: 479px) {
+
+    body main .passion .title h3,
+    body main .gallery .title h3,
+    body main .stats .title h3,
+    body main .blog .title h3,
+    body main .invite .title h3,
+    body main .testimonials .title h3,
+    body main .about-us .title h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .hero .content h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+/* Tablet - من 480 إلى أقل من 767 */
+@media (min-width: 480px) and (max-width: 766px) {
+
+    body main .passion .title h3,
+    body main .gallery .title h3,
+    body main .stats .title h3,
+    body main .blog .title h3,
+    body main .invite .title h3,
+    body main .testimonials .title h3,
+    body main .about-us .title h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero .content h3 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* Desktop - 767 وطالع */
+@media (min-width: 767px) {
+
+    body main .passion .title h3,
+    body main .gallery .title h3,
+    body main .stats .title h3,
+    body main .blog .title h3,
+    body main .invite .title h3,
+    body main .testimonials .title h3,
+    body main .about-us .title h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .hero .content h3 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
