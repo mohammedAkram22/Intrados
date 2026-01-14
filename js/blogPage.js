@@ -1,55 +1,13 @@
-
 //---------------- navbar ----------------
+window.onload = () => {
+    scrollY > 100 ? header.classList.add("scrolled") : header.classList.remove("scrolled")
+}
 let header = document.querySelector('header');
-let logo = document.querySelector('.logo');
-let dark_btn = document.querySelector('.dark-btn');
-let nav_link = document.querySelectorAll('.nav-item .link');
-let active_nav_link = document.querySelector('.nav-item .active');
 let to_up_btn = document.querySelector(".to-up-btn");
 
 window.onscroll = () => {
-    if (scrollY > 100) {
-        if (document.body.classList.contains("dark")) {
-            header.style.backgroundColor = "#000";
-            logo.style.color = "#FFF"
-            dark_btn.style.color = "#FFF"
-            header.style.boxShadow = "0 25px 90px 0 rgb(4 2 0 / 3%)";
-            nav_link.forEach(link => {
-                link.style.setProperty("color", "#eee");
-            });
-            to_up_btn.style.marginBottom = "0";
-        } else {
-            header.style.backgroundColor = '#FFF'
-            logo.style.color = "#000"
-            dark_btn.style.color = "#000"
-            header.style.boxShadow = "0 25px 90px 0 rgb(4 2 0 / 3%)";
-            nav_link.forEach(link => {
-                link.style.setProperty("color", "#060500");
-                link.style.opacity = "0.8";
-            });
-            to_up_btn.style.marginBottom = "0";
-        }
-        header.style.minHeight = '90px';
-    } else {
-        header.style.backgroundColor = "transparent";
-        logo.style.color = "#FFF"
-        header.style.minHeight = '100px';
-        dark_btn.style.color = "#FFF"
-        nav_link.forEach(link => {
-            link.style.setProperty("color", "#eee");
-            link.style.opacity = "1";
-        });
-        to_up_btn.style.marginBottom = "-100px";
-        if (window.innerWidth < 992) {
-            nav_link.forEach(link => {
-                link.style.setProperty("color", "#000");
-                link.style.opacity = "1";
-            });
-        }
-    }
-    active_nav_link.style.color = "#ff9e00"
+    scrollY > 100 ? header.classList.add("scrolled") : header.classList.remove("scrolled")
 }
-
 
 //---------------- collapse ----------------
 

@@ -86,6 +86,17 @@ header {
     background-color: transparent;
 }
 
+body header.scrolled {
+    background: #FFF;
+    min-height: 90px;
+    box-shadow: 0 25px 90px 0 rgb(4 2 0 / 3%)
+}
+
+body.dark header.scrolled {
+    background: #000;
+    min-height: 90px;
+}
+
 body.dark header {
     background-color: transparent;
 }
@@ -95,6 +106,14 @@ header nav .logo {
     font-size: 28px;
     color: #FFF;
     font-weight: 700;
+}
+
+body header.scrolled nav .logo {
+    color: #000;
+}
+
+body.dark header.scrolled nav .logo {
+    color: #FFF;
 }
 
 header nav .logo span {
@@ -119,6 +138,16 @@ body.dark header nav ul a {
 a.link {
     text-decoration: none;
     color: #FFF;
+}
+
+header.scrolled a.link {
+    color: #060500;
+    opacity: .8;
+}
+
+body.dark header.scrolled a.link {
+    color: #eee;
+    opacity: 1;
 }
 
 a.link:before,
@@ -150,8 +179,7 @@ header nav a.active {
 header .search-btn,
 .passion .btn-warning,
 .blog .read-more-btn,
-.invite .Services-btn,
-.experts .join-btn {
+.invite .Services-btn {
     padding: 18px 38px;
     font-weight: 500;
     background-color: var(--primary-color);
@@ -163,10 +191,17 @@ header .search-btn,
 header .search-btn:hover,
 .passion .btn-warning:hover,
 .blog .read-more-btn:hover,
-.invite .Services-btn:hover,
-.experts .join-btn:hover {
+.invite .Services-btn:hover {
     background-color: #ff8500;
     border-color: #ff8500;
+}
+
+body.dark header.scrolled .dark-btn {
+    color: #FFF;
+}
+
+body header.scrolled .dark-btn {
+    color: #000
 }
 
 header .dark-btn {
@@ -206,28 +241,6 @@ header .dark-btn {
     padding: 10px 0;
 }
 
-/* .dropdown-menu.show {
-    min-width: 100% !important;
-}
-
-.dropdown-menu.show li {
-    padding: 0 !important;
-}
-
-.dropdown-menu.show li a {
-    padding: 0 16px 10px;
-    width: 100px;
-}
-
-.dropdown-menu.show li:hover a {
-    background: transparent;
-}
-
-#navbarSupportedContent {
-    max-height: 80vh;
-    overflow-y: auto;
-    scrollbar-width: thin;
-} */
 
 /*------------------ HERO STYLE ------------------ */
 .hero {
