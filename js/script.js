@@ -25,11 +25,11 @@ $(document).ready(function () {
 });
 
 //---------------- navbar ----------------
+let header = document.querySelector('header');
+let to_up_btn = document.querySelector(".to-up-btn");
 window.onload = () => {
     scrollY > 100 ? header.classList.add("scrolled") : header.classList.remove("scrolled")
 }
-let header = document.querySelector('header');
-let to_up_btn = document.querySelector(".to-up-btn");
 
 window.onscroll = () => {
     scrollY > 100 ? header.classList.add("scrolled") : header.classList.remove("scrolled")
